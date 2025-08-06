@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { FaArrowLeft } from "react-icons/fa6";
+import flowerDeco from './assets/flower-deco.png';
+import funkos from './assets/funkos.png';
+import paperLamp from './assets/paper-lamp.png';
 
 function App() {
   const [step, setStep] = useState(0);
@@ -35,7 +38,7 @@ function App() {
         </motion.button>
         <AnimatePresence>
         {step<=3 && <motion.img
-          src="./assets/flower-deco.png"
+          src={flowerDeco}
           alt="flower decoration"
           className="absolute bottom-0 right-1/4 w-1/2 filter invert translate-y-1/2"
           initial={{ y: 50 }}
@@ -47,7 +50,7 @@ function App() {
         />}
 
         {step<=3 && <motion.img
-          src="./assets/flower-deco.png"
+          src={flowerDeco}
           alt="flower decoration"
           className="absolute top-0 right-1/4 w-1/2 filter invert -translate-y-1/2 rotate-180"
           initial={{ y: 50 }}
@@ -59,7 +62,7 @@ function App() {
         
         {step >= 1 && step<=3 && (
           <motion.img
-            src="./assets/paper-lamp.png"
+            src={paperLamp}
             className="absolute bottom-2 right-2 w-1/4 h-auto"
             initial={{ x: 400 }}
             animate={{ x: 0 }}
@@ -202,7 +205,7 @@ function App() {
             <h1 className="text-2xl">Aparte mira lo bien que nos vemos juntos, una locura. Estos funkos van a ir arriba de la tora de boda, estas avisada.</h1>
             <div className="border-3 border-purple-custom-2 rounded-3xl bg-[rgba(255,255,255,0.53)]">
 
-            <img src="./assets/funkos.png" alt="funkos" className="w-full"/>
+            <img src={funkos} alt="funkos" className="w-full"/>
             </div>
           </motion.div>
         )}
