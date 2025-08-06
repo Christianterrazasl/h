@@ -35,7 +35,7 @@ function App() {
         </motion.button>
         <AnimatePresence>
         {step<=3 && <motion.img
-          src="../public/flower-deco.png"
+          src="./assets/flower-deco.png"
           alt="flower decoration"
           className="absolute bottom-0 right-1/4 w-1/2 filter invert translate-y-1/2"
           initial={{ y: 50 }}
@@ -47,7 +47,7 @@ function App() {
         />}
 
         {step<=3 && <motion.img
-          src="../public/flower-deco.png"
+          src="./assets/flower-deco.png"
           alt="flower decoration"
           className="absolute top-0 right-1/4 w-1/2 filter invert -translate-y-1/2 rotate-180"
           initial={{ y: 50 }}
@@ -59,7 +59,7 @@ function App() {
         
         {step >= 1 && step<=3 && (
           <motion.img
-            src="../public/paper-lamp.png"
+            src="./assets/paper-lamp.png"
             className="absolute bottom-2 right-2 w-1/4 h-auto"
             initial={{ x: 400 }}
             animate={{ x: 0 }}
@@ -202,7 +202,7 @@ function App() {
             <h1 className="text-2xl">Aparte mira lo bien que nos vemos juntos, una locura. Estos funkos van a ir arriba de la tora de boda, estas avisada.</h1>
             <div className="border-3 border-purple-custom-2 rounded-3xl bg-[rgba(255,255,255,0.53)]">
 
-            <img src="../public/funkos.png" alt="funkos" className="w-full"/>
+            <img src="./assets/funkos.png" alt="funkos" className="w-full"/>
             </div>
           </motion.div>
         )}
